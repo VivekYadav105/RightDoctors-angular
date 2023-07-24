@@ -1,0 +1,28 @@
+<div class="container">
+    <form class="form" (ngsubmit)="editUser()">
+        <div class="top-buttons">
+            <h1>Edit User</h1>
+            <button class="button" type="button" (click)="hideComponent()">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="20px" height="20px">
+                    <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="form-control">
+            <label for="name" class="form__label">Name</label>
+            <input type="text" placeholder="Name" class="form__input" id="name" [(ngModel)]="formData.name" required />
+        </div>
+        <div class="form-control">
+            <label for="MobileNo" class="form__label">MobileNo</label>
+            <input type="text" placeholder="Mobile Number" class="form__input" id="MobileNo" [(ngModel)]="formData.=MobileNo" required/>
+        </div>
+        <div class="form-control">
+            <label for="Gender" class="form__label">Gender</label>
+            <input type="text" placeholder="Gender" [(ngModel)]="formData.gender" class="form__input" id="Gender" required/>
+        </div>
+        <div class="form-control">
+            <label for="Age" class="form__label">Age</label>
+            <input type="text" placeholder="Age" [(ngModel)]="formData.age" class="form__input" id="Age" required/>
+        </div>
+    </form>
+  </div>

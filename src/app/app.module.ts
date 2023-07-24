@@ -1,16 +1,23 @@
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,ViewChild } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { FormComponent } from './form/form.component';
+import { EditComponent } from './edit/edit.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormComponent,
+    EditComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,FormsModule,CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
